@@ -1,4 +1,5 @@
 Name : <input type="text" [(ngModel)]="name">
 <br>
 Value coming from Child is:
-<app-child-component [fname]="name"></app-child-component>
+<app-child-component [fname]="name" [arrayList]="myArray"></app-child-component>
+<button class="btn btn-primary" (click)="push()">Click me</button>
