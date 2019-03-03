@@ -22,4 +22,8 @@ export class AppComponent implements OnInit{
    this._dataService.currentdata.subscribe(data =>
     this.test = data)
   }
+  subject(){
+    this._dataService.changedata(['Ram','Shani']);
+    
+  }
 }

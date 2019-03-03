@@ -1,4 +1,4 @@
-Name : <input type="text" [(ngModel)]="name">
+Name : <input type="text" [(ngModel)]="name" (ngModelChange)="subject($event)">
 <br>
 Value coming from Child is:
 <app-child-component [fname]="name" [arrayList]="myArray"></app-child-component>

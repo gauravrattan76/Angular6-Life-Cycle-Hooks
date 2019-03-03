@@ -12,7 +12,7 @@ export class ChildComponentComponent implements OnInit, OnChanges, DoCheck, OnDe
   constructor(private _dataService:DataService) {
     console.log("Constructor getting called");
   }
-  data2:any[];
+  data2:any;
 
   ngOnInit() {
     console.log("ngOninit getting getting called");
