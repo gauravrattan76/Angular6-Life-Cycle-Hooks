@@ -4,7 +4,6 @@ import {DataService} from '../dataService';
 @Component({
   selector: 'app-child-component',
   templateUrl: './child-component.component.html',
-  providers:[DataService],
   styleUrls: ['./child-component.component.css']
 })
 export class ChildComponentComponent implements OnInit, OnChanges, DoCheck, OnDestroy {

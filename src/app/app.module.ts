@@ -4,6 +4,8 @@ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
+import {DataService} from './dataService';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,7 @@ import { ChildComponentComponent } from './child-component/child-component.compo
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers:[DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
